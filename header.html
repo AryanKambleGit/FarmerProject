@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            letter-spacing: 1.5px;
+        }
+        .navbar {
+            height: 60px;
+            width: 100%;
+            max-width: 1528px;
+            display: flex;
+            color: white;
+            font-weight: 550;
+            background-image: url(images/NavbarBackgroundDesign.png);
+            background-size: cover;
+            box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.3);
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            z-index: 1000;
+        }
+        .nav-cen {
+            display: flex;
+            gap: 20px;
+        }
+        .link {
+            text-decoration: none;
+            color: white;
+        }
+        .homeLink {
+            text-decoration: none;
+            color: white;
+        }
+        .logo {
+            height: 50px;
+            width: 150px;
+            background-image: url(images/farm2martlogooo.png);
+            background-size: cover;
+            position: relative;
+            right: 12%;
+            top: 5px;
+        }
+        .nav {
+            width: 120px;
+            height: 40px;
+            border-radius: 5px;
+            display: flex;
+            border: 1.5px solid transparent;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav:hover {
+            border: 1.5px solid white;
+            box-shadow: 0px 0px 25px 1px rgb(79, 75, 75);
+        }
+        .team {
+            width: 200px;
+        }
+        .search {
+            display: flex;
+            position: relative;
+            left: 12%;
+        }
+        #searchbar {
+            padding: 7px 20px;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.2);
+            border: 2px solid transparent;
+        }
+        #searchbar:hover {
+            border: 2px solid rgb(195, 255, 0);
+            box-shadow: 0px 0px 25px 1px rgb(79, 75, 75);
+        }
+        #searchbtn {
+            padding: 2px 10px;
+            background-color: rgb(238, 255, 0);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.2);
+            border: 1px solid white;
+        }
+        #logOut {
+            padding: 7px 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: rgb(255, 146, 3);
+            border-radius: 4px;
+            color: white;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+            <div class="nav-cen">
+                <a href="home.jsp" target="_parent" class="homelink link"><div class="home nav">HOME</div></a>
+                <a href="contact.html" target="_parent" class="link"><div class="contact nav">CONTACT</div></a>
+                <a href="meetOurTeam.html" target="_parent" class="link"><div class="team nav">MEET OUR TEAM</div></a>
+                <a href="faqsInterface.html" target="_parent" class="faqlink link"><div class="faqs nav">FAQ's</div></a>
+               
+            </div>
+            <div class="search">
+                <input id="searchbar" type="text" placeholder="search your item here">
+                <button id="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <form action="logout.jsp" method="post" target="_parent">
+                    <button id="logOut" name="logOut">log out</button>
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

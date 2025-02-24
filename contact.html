@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARM 2 MART -contact page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+main{
+    height: 800px;
+    width: 1528px;
+    background-image: url(images/contactPagebackground.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 60px;
+
+}
+.contactDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#contactHeading{
+    font-size: 40px;
+    color: rgb(7, 118, 7);
+}
+#contactPara{
+    width: 1000px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 550;
+
+
+}
+.socialMediaInfo{
+    height: 200px;
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 150px;
+}
+.mediaBox{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#icon{
+   font-size: 60px; 
+}
+h4{
+    color: white;
+}
+#mediaBtn{
+    height: 25px;
+    width: 60px;
+    font-weight: 500;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    border: 1.5px solid white;
+}
+.headeriframe {
+            border: none;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .footeriframe {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe src="header.html" width="1528px" height="60px" class="headeriframe"></iframe>
+    <main>
+        <div class="contactDetails">
+            <h1 id="contactHeading">CONTACT INFORMATION</h1>
+            <P id="contactPara">We’d love to hear from you! Whether you’re a farmer looking for better market access, a buyer interested in quality produce, or a partner willing to collaborate, feel free to reach out. Connect with us for inquiries, support, or partnership opportunities, and let's build a fair and transparent agricultural trade system together.</P>
+            <div class="socialMediaInfo">
+                <div class="instagramInfo mediaBox">
+                    <i id="icon" class="fa-brands fa-instagram fa-fade" style="color: #ffffff;"></i>
+
+                    <h4>INSTAGRAM</h4>
+                    <a href=""><button id="mediaBtn">View</button></a>
+            
+                </div>
+                <div class="whatsappInfo mediaBox">
+                    <i id="icon" class="fa-brands fa-whatsapp fa-fade" style="color: #ffffff;"></i>
+
+                    <h4>WHATSAPP</h4>
+                    <a href=""><button id="mediaBtn">View</button></a>
+                </div>
+                <div class="emailInfo mediaBox">
+                    <i id="icon" class="fa-solid fa-envelope fa-fade" style="color: #ffffff;"></i>
+
+                    <h4>EMAIL</h4>
+                    <a href=""><button id="mediaBtn">Send</button></a>
+                </div>
+                <div class="youtubeInfo mediaBox">
+                    <i id="icon" class="fa-brands fa-youtube fa-fade" style="color: #ffffff;"></i>
+                    <h4>YOUTUBE</h4>
+                    <a href=""><button id="mediaBtn">View</button></a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+     <iframe src="footer.html" width="1528px" height="400" class="footeriframe"></iframe>
+    
+</body>
+</html>
